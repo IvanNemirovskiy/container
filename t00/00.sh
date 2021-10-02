@@ -1,0 +1,1 @@
+docker run --name testapp -it ubuntu bash

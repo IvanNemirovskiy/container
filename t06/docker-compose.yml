@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+
+  web:
+    image: nginx
+    ports:
+      - "80:8000"
+    depends_on:
+      - web2
+
+  web2:
+    image: httpd
+    ports:
+      - "90:9090"
